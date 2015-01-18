@@ -5,6 +5,7 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 matrixinverse <- NULL
+## The makeCacheMatrix function creates a list that sets and gets the value of the matrix
 set <- function(y) {
      x <<- y
 matrixinverse <<- NULL
@@ -18,9 +19,7 @@ list(set = set, get = get,
 
 
 }
-
-
-## Write a short comment describing this function
+## The cacheSolve function calculates the inverse of the matrix
 
 cacheSolve <- function(x, ...) {
  matrixinverse <- x$getinverse()
